@@ -238,7 +238,7 @@
             const URL = "./my_model/";
 
             let model, webcam, labelContainer, maxPredictions;
-
+            init();
             // Load the image model and setup the webcam
             async function init() {
                 const modelURL = URL + "model.json";
@@ -265,7 +265,7 @@
                     labelContainer.appendChild(document.createElement("div"));
                 }
             }
-
+            
             async function loop() {
                 webcam.update(); // update the webcam frame
                 await predict();
