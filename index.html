@@ -282,6 +282,7 @@
                 }
                 var max = Math.max(prediction[0].probability, prediction[1].probability, prediction[2].probability)
                 if(max==prediction[1].probability)$(document).scrollTop($(document).height());
+                if(max==prediction[0].probability)$('html').scrollTop(0);
             }
         </script>
 
